@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Main_examen2 {
+    public static void main2(String[] args) {
+
+        //Ponemos las Variables
+        float totalCuenta , propinaPorcentaje , totalPropina , total_a_Pagar , totalPagado , cambio;
+        //Pedimos los datos al Usuario
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Ingresa el total de la cuenta");
+        totalCuenta = entrada.nextFloat();
+        System.out.println("Ingresa el Porcentaje de la propina que quieres dejar");
+        propinaPorcentaje = entrada.nextFloat();
+
+        //Operaciones
+
+        totalPropina = totalCuenta * (porcentajePropina / 100);
+        total_a_Pagar = totalCuenta + totalPropina;
+        System.out.println("El total a pagar es de $" + Math.round(total_a_Pagar * 100) / 100.0);
+
+        //Pedir el total y calcular el cambio
+        System.out.println("Ingresa el total pagado");
+        totalPagado = entrada.nextFloat();
+        cambio = totalPagado - total_a_Pagar;
+        System.out.println("El cambio es de: $" + Math.round(cambio * 100) / 100.0);
+
+
+
+
+            }
+        }
